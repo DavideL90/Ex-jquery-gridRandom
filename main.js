@@ -7,10 +7,19 @@ $(document).ready(function(){
       //assign to a variable the value of cell
       var actualCell = $(this);
       $.ajax({
-         url: https: '//www.boolean.careers/api/random/int',
-         method: GET,
+         url: 'https://www.boolean.careers/api/random/int',
+         method: 'GET',
          success: function(data){
+            console.log(data.response);
+            if(data.response <= 5){
+               actualCell.addClass('yellow-backgr');
+               actualCell.addClass('disabled');
 
+            }
+            else{
+               actualCell.addClass('green-backgr');
+               actualCell.addClass('disabled');
+            }
          },
          error: function(){
 
