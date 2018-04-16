@@ -26,11 +26,9 @@ body{
    align-items: center;
 }
 .grid-cell.yellow-backgr{
-   background-color: yellow;
+   background: radial-gradient(#ffff80, #ffffcc);
 }
 .grid-cell.green-backgr{
-   background-color: green;
-}
-.disabled{
-   pointer-events: none;
+   background: radial-gradient(#99ff66, #33cc33);
+
 }
