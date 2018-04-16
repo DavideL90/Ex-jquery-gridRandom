@@ -2,7 +2,22 @@ $(document).ready(function(){
    //Call function to generate grid
    generateGrid();
    //make an ajax request for a random number
-   
+   //when click on grid-cell
+   $('.grid-cell').click(function(){
+      //assign to a variable the value of cell
+      var actualCell = $(this);
+      $.ajax({
+         url: https: '//www.boolean.careers/api/random/int',
+         method: GET,
+         success: function(data){
+
+         },
+         error: function(){
+
+         }
+      });
+
+   });
 });
 
 //FUNZIONI
