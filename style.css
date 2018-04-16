@@ -3,3 +3,28 @@
    margin: 0;
    padding: 0;
 }
+body{
+   background: radial-gradient(#cc2900, #ffcc99);
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#grid-cnt{
+   display: flex;
+   flex-wrap: wrap;
+   border: 1px solid black;
+   width: 600px;
+   height: 600px;
+}
+.grid-cell{
+   width: calc(100% / 6);
+   height: calc(100% / 6);
+   border: 1px solid black;
+}
+.yellow-backgr{
+   color: yellow;
+}
+.green-backgr{
+   color: green;
+}
