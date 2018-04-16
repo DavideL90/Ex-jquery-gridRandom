@@ -11,13 +11,16 @@ $(document).ready(function(){
          method: 'GET',
          success: function(data){
             console.log(data.response);
+            var randomNumb = data.response;
             if(data.response <= 5){
                actualCell.addClass('yellow-backgr');
+               actualCell.text(randomNumb);
                actualCell.addClass('disabled');
 
             }
             else{
                actualCell.addClass('green-backgr');
+               actualCell.text(randomNumb);
                actualCell.addClass('disabled');
             }
          },

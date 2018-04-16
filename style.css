@@ -21,6 +21,9 @@ body{
    width: calc(100% / 6);
    height: calc(100% / 6);
    border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .grid-cell.yellow-backgr{
    background-color: yellow;
